@@ -97,7 +97,7 @@ new Vue({
                     }
                     break;
                 case 4:
-                    let operation = ejercicio.campos[0].valor;
+                    const operation = ejercicio.campos[0].valor;
                     let r;
                     try {
                         r = eval(operation);
@@ -107,8 +107,8 @@ new Vue({
                     }
                     break
                 case 5:
-                    let a = ejercicio.campos[0].valor;
-                    let b = ejercicio.campos[1].valor;
+                    const a = ejercicio.campos[0].valor;
+                    const b = ejercicio.campos[1].valor;
 
                     if (!isNaN(a * b)) {
                         let r = Math.max(a, b);
@@ -118,8 +118,8 @@ new Vue({
                     }
                     break
                 case 6:
-                    let base = ejercicio.campos[0].valor
-                    let altura = ejercicio.campos[1].valor
+                    const base = ejercicio.campos[0].valor
+                    const altura = ejercicio.campos[1].valor
 
                     if (!isNaN(base * altura)) {
                         let r = (base * altura) / 2;
