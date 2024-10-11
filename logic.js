@@ -1,6 +1,9 @@
 new Vue({
     el: '#app',
     data: {
+        imprimir: null,
+        lleno : false,
+
         ejercicios: [
             {
                 id: 1,
@@ -8,7 +11,7 @@ new Vue({
                 descripcion: 'Este ejercicio calcula el área de un cuadrado dado el valor de uno de sus lados.',
                 visible: false,
                 campos: [
-                    { id: 'lado', label: 'Lado del cuadrado:', tipo: 'number', valor: '' }
+                    {id: 'lado', label: 'Lado del cuadrado:', tipo: 'number', valor: ''}
                 ],
                 resultado: ''
             },
@@ -18,7 +21,7 @@ new Vue({
                 descripcion: 'Este ejercicio calcula el área de un círculo dado el radio.',
                 visible: false,
                 campos: [
-                    { id: 'radio', label: 'Radio del círculo:', tipo: 'number', valor: '' }
+                    {id: 'radio', label: 'Radio del círculo:', tipo: 'number', valor: ''}
                 ],
                 resultado: ''
             },
@@ -28,7 +31,7 @@ new Vue({
                 descripcion: 'Pasa grados a Fahrenheit.',
                 visible: false,
                 campos: [
-                    { id: 'grados', label: 'Grados Fahrenheit:', tipo: 'number', valor: '' }
+                    {id: 'grados', label: 'Grados Fahrenheit:', tipo: 'number', valor: ''}
                 ],
                 resultado: ''
             },
@@ -38,7 +41,7 @@ new Vue({
                 descripcion: 'Puedes hacer multiplicaciones y divisiones al tiempo.',
                 visible: false,
                 campos: [
-                    { id: 'operation', label: 'Ingrese su operación:', tipo: 'text', valor: '' }
+                    {id: 'operation', label: 'Ingrese su operación:', tipo: 'text', valor: ''}
                 ],
                 resultado: ''
             },
@@ -48,8 +51,8 @@ new Vue({
                 descripcion: 'Determina el numero mayor',
                 visible: false,
                 campos: [
-                    { id: 'a', label: 'Ingrese su primer numero:', tipo: 'number', valor: '' },
-                    { id: 'b', label: 'Ingrese su segundo numero:', tipo: 'number', valor: '' }
+                    {id: 'a', label: 'Ingrese su primer numero:', tipo: 'number', valor: ''},
+                    {id: 'b', label: 'Ingrese su segundo numero:', tipo: 'number', valor: ''}
                 ],
                 resultado: ''
             },
@@ -59,8 +62,8 @@ new Vue({
                 descripcion: 'Determina el área de un Triángulo.',
                 visible: false,
                 campos: [
-                    { id: 'base', label: 'Ingrese su base:', tipo: 'number', valor: '' },
-                    { id: 'altura', label: 'Ingrese su altura:', tipo: 'number', valor: '' }
+                    {id: 'base', label: 'Ingrese su base:', tipo: 'number', valor: ''},
+                    {id: 'altura', label: 'Ingrese su altura:', tipo: 'number', valor: ''}
                 ],
                 resultado: ''
             },
@@ -70,9 +73,9 @@ new Vue({
                 descripcion: 'Determina el numero mayor',
                 visible: false,
                 campos: [
-                    { id: 'a', label: 'Ingrese un numero:', tipo: 'number', valor: '' },
-                    { id: 'b', label: 'Ingrese otro numero:', tipo: 'number', valor: '' },
-                    { id: 'c', label: 'Ingrese otro numero:', tipo: 'number', valor: '' }
+                    {id: 'a', label: 'Ingrese un numero:', tipo: 'number', valor: ''},
+                    {id: 'b', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
+                    {id: 'c', label: 'Ingrese otro numero:', tipo: 'number', valor: ''}
                 ],
                 resultado: ''
             },
@@ -90,8 +93,8 @@ new Vue({
                 descripcion: 'Desarrolle un programa que permita leer dos valores distintos, determinar cuál de los dos valores es el mayor y menor.',
                 visible: false,
                 campos: [
-                    { id: 'a', label: 'Ingrese un numero:', tipo: 'number', valor: '' },
-                    { id: 'b', label: 'Ingrese otro numero:', tipo: 'number', valor: '' },
+                    {id: 'a', label: 'Ingrese un numero:', tipo: 'number', valor: ''},
+                    {id: 'b', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
                 ],
                 resultado: ''
             },
@@ -101,9 +104,9 @@ new Vue({
                 descripcion: 'Desarrolle un programa que permita leer tres valores y almacenarlos en las variables A, B y C respectivamente. Debe imprimir cual es el mayor y cuál es el menor. recuerde constatar que los tres valores introducidos por el teclado sean valores distintos. Presente un mensaje de alerta en caso de que se detecte la introducción de valores iguales.',
                 visible: false,
                 campos: [
-                    { id: 'A', label: 'Ingrese un numero:', tipo: 'number', valor: '' },
-                    { id: 'B', label: 'Ingrese otro numero:', tipo: 'number', valor: '' },
-                    { id: 'C', label: 'Ingrese otro numero:', tipo: 'number', valor: '' },
+                    {id: 'A', label: 'Ingrese un numero:', tipo: 'number', valor: ''},
+                    {id: 'B', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
+                    {id: 'C', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
                 ],
                 resultado: ''
             },
@@ -114,10 +117,10 @@ new Vue({
                     'los cuatro números introducidos y también el menor de ellos.',
                 visible: false,
                 campos: [
-                    { id: 'A', label: 'Ingrese un numero:', tipo: 'number', valor: '' },
-                    { id: 'B', label: 'Ingrese otro numero:', tipo: 'number', valor: '' },
-                    { id: 'C', label: 'Ingrese otro numero:', tipo: 'number', valor: '' },
-                    { id: 'D', label: 'Ingrese otro numero:', tipo: 'number', valor: '' },
+                    {id: 'A', label: 'Ingrese un numero:', tipo: 'number', valor: ''},
+                    {id: 'B', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
+                    {id: 'C', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
+                    {id: 'D', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
                 ],
                 resultado: ''
             },
@@ -165,8 +168,8 @@ new Vue({
                 descripcion: 'Determinar la hipotenusa de un triángulo rectángulo conocidas las longitudes de sus dos catetos.',
                 visible: false,
                 campos: [
-                    { id: 'A', label: 'Ingrese un cateto:', tipo: 'number', valor: '' },
-                    { id: 'B', label: 'Ingrese otro cateto:', tipo: 'number', valor: '' },
+                    {id: 'A', label: 'Ingrese un cateto:', tipo: 'number', valor: ''},
+                    {id: 'B', label: 'Ingrese otro cateto:', tipo: 'number', valor: ''},
                 ],
                 resultado: ''
             },
@@ -177,8 +180,8 @@ new Vue({
                     'y altura (H).',
                 visible: false,
                 campos: [
-                    { id: 'radio', label: 'Ingrese el radio:', tipo: 'number', valor: '' },
-                    { id: 'altura', label: 'Ingrese la altura:', tipo: 'number', valor: '' },
+                    {id: 'radio', label: 'Ingrese el radio:', tipo: 'number', valor: ''},
+                    {id: 'altura', label: 'Ingrese la altura:', tipo: 'number', valor: ''},
                 ],
                 resultado: ''
             },
@@ -189,7 +192,7 @@ new Vue({
                     'impar.',
                 visible: false,
                 campos: [
-                    { id: 'numero', label: 'Ingrese un numero:', tipo: 'number', valor: '' }
+                    {id: 'numero', label: 'Ingrese un numero:', tipo: 'number', valor: ''}
                 ],
                 resultado: ''
             },
@@ -203,7 +206,7 @@ new Vue({
                     'c. ¿Cuántos menores de 30?',
                 visible: false,
                 campos: [
-                    { id: 'numeros', label: 'Ingrese los 10 numeros separados por "-":', tipo: 'text', valor: '' }
+                    {id: 'numeros', label: 'Ingrese los 10 numeros separados por "-":', tipo: 'text', valor: ''}
                 ],
                 resultado: ''
             },
@@ -214,12 +217,123 @@ new Vue({
                     'caso.',
                 visible: false,
                 campos: [
-                    { id: 'numeros', label: 'Ingrese un numero:', tipo: 'number', valor: '' },
-                    { id: 'numeros', label: 'Ingrese otro numero:', tipo: 'number', valor: '' }
+                    {id: 'numeros', label: 'Ingrese un numero:', tipo: 'number', valor: ''},
+                    {id: 'numeros', label: 'Ingrese otro numero:', tipo: 'number', valor: ''}
                 ],
                 resultado: ''
             },
-
+            {
+                id: 21,
+                titulo: '¿Cuáles son múltiplos de 2?',
+                descripcion: 'Realice un programa que determine de los 10 primeros números, ¿Cuáles son múltiplos de 2?',
+                visible: false,
+                campos: [
+                    {id: 'numeros', label: 'Ingrese un numero:', tipo: 'text', valor: ''},
+                ],
+                resultado: ''
+            },
+            {
+                id: 22,
+                titulo: 'Contar minutos',
+                descripcion: 'Realice un programa que determine cuantos minutos hay en 5 horas',
+                visible: false,
+                campos: [],
+                resultado: ''
+            },
+            {
+                id: 23,
+                titulo: 'Calcular valor de estacionamiento',
+                descripcion: 'Realice un programa que calcule el monto a pagar por el servicio de estacionamiento, teniendo en\n' +
+                    '            cuenta que por la primera hora de estadía se tiene una tarifa de $ 3.000 pesos y las restantes\n' +
+                    '            tienen un costo de $ 2.000 pesos.',
+                visible: false,
+                campos: [
+                    {id: 'horas', label: 'Ingrese las horas estacionado', tipo: 'text', valor: ''}
+                ],
+                resultado: ''
+            },
+            {
+                id: 24,
+                titulo: 'Calcular valor de entradas a un espectaculo',
+                descripcion: 'Realice un programa que determine el pago a realizar por la entrada a un espectáculo donde se\n' +
+                    'pueden comprar sólo hasta cuatro entradas, donde al costo de dos entradas se les descuenta el\n' +
+                    '10%, al de tres entradas el 15% y a la compra de cuatro tickets se le descuenta el 20 %. El valor\n' +
+                    'unitario de la entrada es de $ 10.000 pesos.',
+                visible: false,
+                campos: [
+                    {id: 'entradas', label: 'Ingrese la cantidad de entradas: ', tipo: 'number', valor: ''}
+                ],
+                resultado: ''
+            },
+            {
+                id: 25,
+                titulo: 'Kilometros/h a metros/s',
+                descripcion: 'Realice un programa que, a partir de proporcionarle la velocidad de un automóvil, expresada en\n' +
+                    'kilómetros por hora, proporcione la velocidad en metros por segundo.',
+                visible: false,
+                campos: [
+                    {id: 'kilometros', label: 'Ingrese la velocidad en KM/H: ', tipo: 'text', valor: ''}
+                ],
+                resultado: ''
+            },
+            {
+                id: 26,
+                titulo: 'Calcular nota final',
+                descripcion: 'Desarrolle un programa que permita calcular la nota final de 3 Notas parciales, el primer corte\n' +
+                    'equivale al 33%, el segundo al 33% y el tercero al 34%. El sistema debe imprimir el nombre del\n' +
+                    'alumno y la nota final sabiendo si aprobó o reprobó la materia.',
+                visible: false,
+                campos: [
+                    {id: 'testOne', label: 'Ingrese la primera nota: ', tipo: 'text', valor: ''},
+                    {id: 'testTwo', label: 'Ingrese la segunda nota: ', tipo: 'text', valor: ''},
+                    {id: 'testThree', label: 'Ingrese la tercera nota: ', tipo: 'text', valor: ''},
+                    {id: 'name', label: 'Ingrese el nombre del estudiante: ', tipo: 'text', valor: ''}
+                ],
+                resultado: ''
+            },
+            {
+                id: 27,
+                titulo: 'Calcular nomina',
+                descripcion: 'Desarrolle un programa para la empresa Constructora Tecnovivir Casas C.A., que le permita\n' +
+                    'calcular e imprimir el valor total de la nómina para la cancelación a un total de 50 obreros calificados\n' +
+                    'a quienes debe cancelar por horas trabajadas. La hora trabajada se pautó en $ 30.000 pesos. El\n' +
+                    'sistema debe imprimir el valor total de la nómina.',
+                visible: false,
+                campos: [
+                    {id: 'horasTotal', label: 'Ingrese el total de las horas: ', tipo: 'text', valor: ''}
+                ],
+                resultado: ''
+            },
+            {
+                id: 28,
+                titulo: 'Factorial de cualquier numero',
+                descripcion: 'Calcular el factorial de cualquier número ingresado en el sistema.',
+                visible: false,
+                campos: [
+                    {id: 'numero', label: 'Ingrese un numero: ', tipo: 'number', valor: ''}
+                ],
+                resultado: ''
+            },
+            {
+                id: 29,
+                titulo: 'Tabla de multiplicar de un numero',
+                descripcion: 'Calcular la tabla de multiplicar hasta el 10 del número 5.',
+                visible: false,
+                campos: [
+                    //{id: 'numero', label: 'Ingrese un numero:', tipo: 'number', valor: ''}
+                ],
+                resultado: ''
+            },
+            {
+                id: 30,
+                titulo: 'Identificar numero primo',
+                descripcion: 'Desarrolle un programa que permita leer un valor entero positivo N y determinar si es primo o no.',
+                visible: false,
+                campos: [
+                    {id: 'numero', label: 'Ingrese un numero:', tipo: 'number', valor: ''}
+                ],
+                resultado: ''
+            }
         ]
     },
     methods: {
@@ -268,7 +382,7 @@ new Vue({
 
                     if (!isNaN(a * b)) {
                         let r = Math.max(a, b);
-                        ejercicio.resultado  = r.toString();
+                        ejercicio.resultado = r.toString();
                     } else {
                         ejercicio.resultado = "Error en el campo";
                     }
@@ -351,7 +465,7 @@ new Vue({
                     break
                 case 13:
                     let valores = 0;
-                   // let r = '';
+                    // let r = '';
                     for (let i = 1; i <= 100; i++) {
                         if (i % 5 === 0) {
                             valores += i;
@@ -436,7 +550,7 @@ new Vue({
                             if (!isNaN(v)) {
                                 numbers[i] = v;
                             } else {
-                               ejercicio.resultado = "Todos los números no son válidos o no son suficientes.";
+                                ejercicio.resultado = "Todos los números no son válidos o no son suficientes.";
                                 ok = false;
                                 break;
                             }
@@ -473,8 +587,182 @@ new Vue({
                         ejercicio.resultado = "Error en el campo o los numeros son iguales.";
                     }
                     break
+                case 21:
+                    let lista = ejercicio.campos[0].valor;
+                    let OK = true;
+                    let subLista = lista.split('-');
+                    let numberss = new Array(10);
 
-                // Agregar más casos para cada ejercicio
+                    if (subLista.length === 10) {
+                        for (let i = 0; i < 10; i++) {
+                            let v = parseFloat(subLista[i]);
+                            if (!isNaN(v)) {
+                                numberss[i] = v;
+                            } else {
+                                ejercicio.resultado = "Todos los números no son válidos o no son suficientes.";
+                                OK = false;
+                                break;
+                            }
+                        }
+                    } else {
+                        ejercicio.resultado = "Debe ingresar exactamente 10 números separados por '-'.";
+                        OK = false;
+                    }
+
+                    if (OK) {
+                        let multiplosDeDos = [];
+                        for (const number of numberss) {
+                            if (number % 2 === 0) {
+                                multiplosDeDos.push(number);
+                            }
+                        }
+
+                        if (multiplosDeDos.length > 0) {
+                            ejercicio.resultado = `Los números múltiplos de 2 son: ${multiplosDeDos.join(', ')}`;
+                        } else {
+                            ejercicio.resultado = "No hay números múltiplos de 2.";
+                        }
+                    }
+                    break
+                case 22:
+                    ejercicio.resultado = `En 5 horas hay ${5 * 60} minutos`;
+                    break
+                case 23:
+                    let horas = parseFloat(ejercicio.campos[0].valor);
+                    let tarifaOne = 3000;
+                    let tarifaTwo = 2000;
+                    let totalOne = 0;
+                    let totalTwo = 0;
+                    const horaOne = 1;
+                    let total = 0;
+
+                    if (!isNaN(horas) && horas > 0) {
+                        if (horas > horaOne) {
+                            horas -= horaOne;
+                            totalTwo = horas * tarifaTwo;
+                            totalOne = horaOne * tarifaOne;
+                            total = totalOne + totalTwo;
+                            console.log('if')
+                        } else {
+                            console.log('Else')
+                            total = horas * tarifaOne;
+                        }
+                        ejercicio.resultado = `Total a pagar: ${total}`;
+                    }
+                    break
+                case 24:
+                    let tickets = parseInt(ejercicio.campos[0].valor)
+                    let valueTickets = 10000;
+                    let totall = 0;
+
+                    if (tickets <= 4 && tickets > 0) {
+                        if (tickets === 2) {
+                            valueTickets -= (valueTickets / 100) * 10;
+                            totall = valueTickets * tickets
+                            console.log('tickets 2')
+                        } else if (tickets === 3) {
+                            valueTickets -= (valueTickets / 100) * 15;
+                            totall = valueTickets * tickets
+                            console.log('tickets 3')
+                        } else if (tickets === 4) {
+                            valueTickets -= (valueTickets / 100) * 20;
+                            totall = valueTickets * tickets
+                            console.log('tickets 4')
+                        } else {
+                            totall = tickets * valueTickets;
+                        }
+
+                        ejercicio.resultado = `Total a pagar: ${totall}`;
+                    } else {
+                        ejercicio.resultado = 'Solo puedes comprar 4 entradas';
+                    }
+                    break
+                case 25:
+                    let speedInKilometers = parseFloat(ejercicio.campos[0].valor)
+                    let speedInMeters = 0;
+
+                    if (!isNaN(speedInKilometers)) {
+                        speedInMeters = ((speedInKilometers * 5) / 18).toFixed(2);
+                        ejercicio.resultado = `velocidad en metros/segundos:  ${speedInMeters}`;
+                    } else {
+                        ejercicio.resultado = 'Ingresa un valor valido';
+                    }
+                    break
+                case 26:
+                    let testOne = parseFloat(ejercicio.campos[0].valor);
+                    let testTwo = parseFloat(ejercicio.campos[1].valor);
+                    let testThree = parseFloat(ejercicio.campos[2].valor);
+                    let name = ejercicio.campos[3].valor;
+                    let notaFinal = 0;
+
+                    if (!isNaN(testOne) && !isNaN(testTwo) && !isNaN(testThree) &&
+                        testOne >= 0 && testOne <= 5 && testTwo >= 0 && testTwo <= 5 && testThree >= 0 && testThree <= 5 && name !== "") {
+
+                        testOne = testOne * 0.33;
+                        testTwo = testTwo * 0.33;
+                        testThree = testThree * 0.34;
+                        notaFinal = (testOne + testTwo + testThree).toFixed(2);
+
+                        let aprobado = " aprobado";
+                        if (notaFinal < 3) {
+                            aprobado = " no aprobado";
+                        }
+
+                        ejercicio.resultado = `La nota final de ${name} es ${notaFinal} ${aprobado}`;
+                    } else {
+                        ejercicio.resultado = 'Error: Verifique los campos ingresados.';
+                    }
+                    break
+                case 27:
+                    const salarioPorHora = 30000;
+                    const totalObreros = 50;
+                    let totalNomina = 0;
+                    let horasTrabajadas = parseFloat(ejercicio.campos[0].valor);
+
+                    if (!isNaN(horasTrabajadas) && horasTrabajadas >= 0) {
+                        let salarioObrero = horasTrabajadas * salarioPorHora;
+                        totalNomina += salarioObrero;
+                    }
+
+                    ejercicio.resultado = `El valor total de la nómina es:  $ ${totalNomina.toLocaleString()}`;
+                    break
+                case 28:
+                    const f = parseInt(ejercicio.campos[0].valor)
+                    let factorial = 1;
+
+                    for (let i = f; i >= 1; i--) {
+                        factorial *= i;
+                    }
+
+                    ejercicio.resultado = `El factorial de ${f} es ${factorial}`
+                    break
+                case 29:
+                    let tabla = 5
+                    this.imprimir = [];
+                    for (let i = 1; i < 11; i++) {
+                        this.imprimir.push(`${tabla} X ${i} = ${tabla * i}`);
+                    }
+                    this.lleno = true;
+                    break
+                case 30:
+                    let N = parseInt(ejercicio.campos[0].valor);
+                    let primo = true;
+                    if (!isNaN(N) && N > 1) {
+                        for (let i = 2; i <= Math.sqrt(N); i++) {
+                            if (N % i === 0) {
+                                primo = false;
+                                break;
+                            }
+                        }
+                        if (primo) {
+                            ejercicio.resultado = `El número ${N} es primo`;
+                        } else {
+                            ejercicio.resultado = `El número ${N} no es primo`;
+                        }
+                    } else {
+                        ejercicio.resultado = "Por favor, ingresa un número mayor que 1.";
+                    }
+                    break
             }
         }
     }
