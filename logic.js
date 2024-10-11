@@ -715,7 +715,7 @@ new Vue({
                     break
                 case 27:
                     const salarioPorHora = 30000;
-                    const totalObreros = 50;
+                    //const totalObreros = 50;
                     let totalNomina = 0;
                     let horasTrabajadas = parseFloat(ejercicio.campos[0].valor);
 
