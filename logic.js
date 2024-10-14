@@ -11,7 +11,7 @@ new Vue({
                 descripcion: 'Este ejercicio calcula el área de un cuadrado dado el valor de uno de sus lados.',
                 visible: false,
                 campos: [
-                    {id: 'lado', label: 'Lado del cuadrado:', tipo: 'number', valor: ''}
+                    {id: 'lado', label: 'Lado del cuadrado:', tipo: 'text', valor: ''}
                 ],
                 resultado: ''
             },
@@ -21,7 +21,7 @@ new Vue({
                 descripcion: 'Este ejercicio calcula el área de un círculo dado el radio.',
                 visible: false,
                 campos: [
-                    {id: 'radio', label: 'Radio del círculo:', tipo: 'number', valor: ''}
+                    {id: 'radio', label: 'Radio del círculo:', tipo: 'text', valor: ''}
                 ],
                 resultado: ''
             },
@@ -31,7 +31,7 @@ new Vue({
                 descripcion: 'Pasa grados a Fahrenheit.',
                 visible: false,
                 campos: [
-                    {id: 'grados', label: 'Grados Fahrenheit:', tipo: 'number', valor: ''}
+                    {id: 'grados', label: 'Grados Fahrenheit:', tipo: 'text', valor: ''}
                 ],
                 resultado: ''
             },
@@ -51,8 +51,8 @@ new Vue({
                 descripcion: 'Determina el numero mayor',
                 visible: false,
                 campos: [
-                    {id: 'a', label: 'Ingrese su primer numero:', tipo: 'number', valor: ''},
-                    {id: 'b', label: 'Ingrese su segundo numero:', tipo: 'number', valor: ''}
+                    {id: 'a', label: 'Ingrese su primer numero:', tipo: 'text', valor: ''},
+                    {id: 'b', label: 'Ingrese su segundo numero:', tipo: 'text', valor: ''}
                 ],
                 resultado: ''
             },
@@ -62,8 +62,8 @@ new Vue({
                 descripcion: 'Determina el área de un Triángulo.',
                 visible: false,
                 campos: [
-                    {id: 'base', label: 'Ingrese su base:', tipo: 'number', valor: ''},
-                    {id: 'altura', label: 'Ingrese su altura:', tipo: 'number', valor: ''}
+                    {id: 'base', label: 'Ingrese su base:', tipo: 'text', valor: ''},
+                    {id: 'altura', label: 'Ingrese su altura:', tipo: 'text', valor: ''}
                 ],
                 resultado: ''
             },
@@ -73,9 +73,9 @@ new Vue({
                 descripcion: 'Determina el numero mayor',
                 visible: false,
                 campos: [
-                    {id: 'a', label: 'Ingrese un numero:', tipo: 'number', valor: ''},
-                    {id: 'b', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
-                    {id: 'c', label: 'Ingrese otro numero:', tipo: 'number', valor: ''}
+                    {id: 'a', label: 'Ingrese un numero:', tipo: 'text', valor: ''},
+                    {id: 'b', label: 'Ingrese otro numero:', tipo: 'text', valor: ''},
+                    {id: 'c', label: 'Ingrese otro numero:', tipo: 'text', valor: ''}
                 ],
                 resultado: ''
             },
@@ -93,8 +93,8 @@ new Vue({
                 descripcion: 'Desarrolle un programa que permita leer dos valores distintos, determinar cuál de los dos valores es el mayor y menor.',
                 visible: false,
                 campos: [
-                    {id: 'a', label: 'Ingrese un numero:', tipo: 'number', valor: ''},
-                    {id: 'b', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
+                    {id: 'a', label: 'Ingrese un numero:', tipo: 'text', valor: ''},
+                    {id: 'b', label: 'Ingrese otro numero:', tipo: 'text', valor: ''},
                 ],
                 resultado: ''
             },
@@ -104,9 +104,9 @@ new Vue({
                 descripcion: 'Desarrolle un programa que permita leer tres valores y almacenarlos en las variables A, B y C respectivamente. Debe imprimir cual es el mayor y cuál es el menor. recuerde constatar que los tres valores introducidos por el teclado sean valores distintos. Presente un mensaje de alerta en caso de que se detecte la introducción de valores iguales.',
                 visible: false,
                 campos: [
-                    {id: 'A', label: 'Ingrese un numero:', tipo: 'number', valor: ''},
-                    {id: 'B', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
-                    {id: 'C', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
+                    {id: 'A', label: 'Ingrese un numero:', tipo: 'text', valor: ''},
+                    {id: 'B', label: 'Ingrese otro numero:', tipo: 'text', valor: ''},
+                    {id: 'C', label: 'Ingrese otro numero:', tipo: 'text', valor: ''},
                 ],
                 resultado: ''
             },
@@ -117,10 +117,10 @@ new Vue({
                     'los cuatro números introducidos y también el menor de ellos.',
                 visible: false,
                 campos: [
-                    {id: 'A', label: 'Ingrese un numero:', tipo: 'number', valor: ''},
-                    {id: 'B', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
-                    {id: 'C', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
-                    {id: 'D', label: 'Ingrese otro numero:', tipo: 'number', valor: ''},
+                    {id: 'A', label: 'Ingrese un numero:', tipo: 'text', valor: ''},
+                    {id: 'B', label: 'Ingrese otro numero:', tipo: 'text', valor: ''},
+                    {id: 'C', label: 'Ingrese otro numero:', tipo: 'text', valor: ''},
+                    {id: 'D', label: 'Ingrese otro numero:', tipo: 'text', valor: ''},
                 ],
                 resultado: ''
             },
@@ -168,8 +168,8 @@ new Vue({
                 descripcion: 'Determinar la hipotenusa de un triángulo rectángulo conocidas las longitudes de sus dos catetos.',
                 visible: false,
                 campos: [
-                    {id: 'A', label: 'Ingrese un cateto:', tipo: 'number', valor: ''},
-                    {id: 'B', label: 'Ingrese otro cateto:', tipo: 'number', valor: ''},
+                    {id: 'A', label: 'Ingrese un cateto:', tipo: 'text', valor: ''},
+                    {id: 'B', label: 'Ingrese otro cateto:', tipo: 'text', valor: ''},
                 ],
                 resultado: ''
             },
@@ -180,8 +180,8 @@ new Vue({
                     'y altura (H).',
                 visible: false,
                 campos: [
-                    {id: 'radio', label: 'Ingrese el radio:', tipo: 'number', valor: ''},
-                    {id: 'altura', label: 'Ingrese la altura:', tipo: 'number', valor: ''},
+                    {id: 'radio', label: 'Ingrese el radio:', tipo: 'text', valor: ''},
+                    {id: 'altura', label: 'Ingrese la altura:', tipo: 'text', valor: ''},
                 ],
                 resultado: ''
             },
@@ -403,7 +403,7 @@ new Vue({
                     const numberTwo = ejercicio.campos[1].valor
                     const numberThree = ejercicio.campos[2].valor
 
-                    if (!isNaN(numberOne * numberTwo * numberThree)) {
+                    if (!isNaN(numberOne * numberTwo * numberThree) && numberOne !== numberTwo && numberTwo !==numberThree && numberOne !== numberThree) {
                         let r = Math.max(numberOne, numberTwo, numberThree);
                         ejercicio.resultado = r.toString();
                     } else {
@@ -764,6 +764,10 @@ new Vue({
                     }
                     break
             }
+        },
+        mostrarEjercicio:function (index) {
+            this.lleno = false;
+            this.ejercicios[index].visible = !this.ejercicios[index].visible
         }
     }
 });

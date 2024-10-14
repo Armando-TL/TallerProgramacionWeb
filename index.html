@@ -40,7 +40,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Ejercicio {{ ejercicio.id }}: {{ ejercicio.titulo }}</h5>
                     <p class="card-text">{{ ejercicio.descripcion }}</p>
-                    <button class="btn btn-primary" @click="ejercicio.visible = !ejercicio.visible">
+                    <button class="btn btn-primary" @click="mostrarEjercicio(index)">
                         {{ ejercicio.visible ? 'Ocultar' : 'Ver Ejercicio' }}
                     </button>
                     <div v-if="ejercicio.visible">
