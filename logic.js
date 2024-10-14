@@ -358,7 +358,7 @@ new Vue({
                     break;
                 case 3:
                     let grados = parseFloat(ejercicio.campos[0].valor);
-                    if (!isNaN(grados)) {
+                    if (!isNaN(grados) && grados <= -459.67) {
                         grados -= 32;
                         let r = (grados * 5) / 9;
                         ejercicio.resultado = r.toFixed(2);
