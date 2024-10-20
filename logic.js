@@ -1,9 +1,7 @@
 new Vue({
     el: '#app',
     data: {
-        imprimir: null,
-        lleno : false,
-
+        M: 0,
         ejercicios: [
             {
                 id: 1,
@@ -380,18 +378,18 @@ new Vue({
                     const a = ejercicio.campos[0].valor;
                     const b = ejercicio.campos[1].valor;
 
-                    if (!isNaN(a * b)) {
+                    if (!isNaN(a * b) && a !== b) {
                         let r = Math.max(a, b);
                         ejercicio.resultado = r.toString();
                     } else {
-                        ejercicio.resultado = "Error en el campo";
+                        ejercicio.resultado = "Error en el campo o los numeros son iguales";
                     }
                     break
                 case 6:
                     const base = ejercicio.campos[0].valor
                     const altura = ejercicio.campos[1].valor
 
-                    if (!isNaN(base * altura)) {
+                    if (!isNaN(base * altura) && base > 0 && altura > 0) {
                         let r = (base * altura) / 2;
                         ejercicio.resultado = r.toFixed(2).toString();
                     } else {
@@ -407,7 +405,7 @@ new Vue({
                         let r = Math.max(numberOne, numberTwo, numberThree);
                         ejercicio.resultado = r.toString();
                     } else {
-                        ejercicio.resultado = "Error en el campo";
+                        ejercicio.resultado = "Error en el campo o no todos los numeros son diferentes";
                     }
                     break
                 case 8:
@@ -426,7 +424,7 @@ new Vue({
                         let menor = Math.min(numOne, numTwo);
                         ejercicio.resultado = `El numero mayor es ${mayor} y el numero menor es ${menor}`
                     } else {
-                        ejercicio.resultado = "Error en el campo";
+                        ejercicio.resultado = "Error en el campo o algúnos números son iguales";
                     }
                     break
                 case 10:
@@ -499,7 +497,7 @@ new Vue({
                     let catetoOne = ejercicio.campos[0].valor
                     let catetoTwo = ejercicio.campos[1].valor
 
-                    if (!isNaN(catetoOne) && !isNaN(catetoTwo)) {
+                    if (!isNaN(catetoOne) && !isNaN(catetoTwo) && catetoOne > 0 && catetoTwo > 0) {
                         let re = Math.sqrt(Math.pow(catetoOne, 2) + Math.pow(catetoTwo, 2));
                         ejercicio.resultado = 'La hipotenusa es: '.concat(re.toFixed(2).toString())
                     } else {
@@ -510,7 +508,7 @@ new Vue({
                     let radioo = ejercicio.campos[0].valor
                     let alturaa = ejercicio.campos[1].valor
 
-                    if (!isNaN(radioo) && !isNaN(alturaa)) {
+                    if (!isNaN(radioo) && !isNaN(alturaa) && radioo > 0 && alturaa > 0) {
                         let a = (2 * Math.PI * radioo * alturaa) + (2 * Math.PI * Math.pow(radioo, 2));
                         let area = a.toFixed(2);
 
@@ -722,6 +720,7 @@ new Vue({
                     if (!isNaN(horasTrabajadas) && horasTrabajadas >= 0) {
                         let salarioObrero = horasTrabajadas * salarioPorHora;
                         totalNomina += salarioObrero;
+                        console.log('Ejericicio 27')
                     }
 
                     ejercicio.resultado = `El valor total de la nómina es:  $ ${totalNomina.toLocaleString()}`;
@@ -738,11 +737,23 @@ new Vue({
                     break
                 case 29:
                     let tabla = 5
-                    this.imprimir = [];
+                    ejercicio.resultado = '\n';
+                    let resultado = document.querySelector('#resultado');
                     for (let i = 1; i < 11; i++) {
-                        this.imprimir.push(`${tabla} X ${i} = ${tabla * i}`);
+                        let resul = (`${tabla} X ${i} = ${tabla * i}`);
+                        let ul = document.createElement('ul');
+                        let li = document.createElement('li');
+
+                        if (resultado && this.M <= 0) {
+                            li.textContent = resul;
+                            ul.append(li);
+                            resultado.append(ul);
+                            console.log('Ejericicio 29')
+                        } else {
+                            console.log('No fue posible');
+                        }
                     }
-                    this.lleno = true;
+                    this.M++;
                     break
                 case 30:
                     let N = parseInt(ejercicio.campos[0].valor);
@@ -766,7 +777,7 @@ new Vue({
             }
         },
         mostrarEjercicio:function (index) {
-            this.lleno = false;
+            this.M = 0;
             this.ejercicios[index].visible = !this.ejercicios[index].visible
         }
     }
